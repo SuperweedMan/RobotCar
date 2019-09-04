@@ -1,0 +1,2 @@
+A1Protocol.cpp:12:1:wyz::A1_Protocol::A1_Protocol()	16	static
+A1Protocol.cpp:17:1:wyz::A1_Protocol::~A1_Protocol()	16	static
