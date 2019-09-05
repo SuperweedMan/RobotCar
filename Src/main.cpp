@@ -46,7 +46,7 @@ UART_HandleTypeDef huart4;
 DMA_HandleTypeDef hdma_uart4_rx;
 
 /* USER CODE BEGIN PV */
-wyz::CUart * pUart4 = new wyz::CUart(&huart4, 100, 20, wyz::CUart::m_UsingDMAMode);
+
 uint8_t buf[300];
 /* USER CODE END PV */
 
@@ -97,13 +97,20 @@ int main(void)
   MX_DMA_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+  //wyz::CSubject* pSubjectUart4 = new wyz::CUart(&huart4, 100, 20, wyz::CUart::m_ObserverMode);
+  wyz::CDevice* pDeviceUart4 = new wyz::CUart(&huart4, 100, 20, wyz::CUart::m_UsingDMAMode);
+  wyz::CObserver* pObserverA1_Protocol = new wyz::A1_Protocol(pDeviceUart4);
+  wyz::A1_Protocol* pA1_Protocol = static_cast<wyz::A1_Protocol*>(pObserverA1_Protocol);
+  wyz::CA1_Event* pA1_Event = new wyz::CA1_Event(wyz::A1_Protocol::ExternalEventType::StartSignal);
+  pA1_Protocol->SetEvent(pA1_Event);
+  //pSubjectUart4->Attach(pA1_Protocol);
+
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  pUart4->NonBlockRead(buf, 10);
-  pUart4->Blockwrite(buf, 10, 5000);
+
   while (1)
   {
     /* USER CODE END WHILE */

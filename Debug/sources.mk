@@ -28,6 +28,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Drivers/STM32F4xx_HAL_Driver/Src \
 Src/CppFile \
+Src/CppFile/CStateMachine \
 Src/CppFile/CUart \
 Src/CppFile/RPLIDAR \
 Src \

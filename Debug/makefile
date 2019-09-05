@@ -11,6 +11,7 @@ RM := rm -rf
 -include Startup/subdir.mk
 -include Src/CppFile/RPLIDAR/subdir.mk
 -include Src/CppFile/CUart/subdir.mk
+-include Src/CppFile/CStateMachine/subdir.mk
 -include Src/CppFile/subdir.mk
 -include Src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk

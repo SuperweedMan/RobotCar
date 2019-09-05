@@ -1,27 +1,30 @@
 new:168:14:void* operator new(std::size_t, void*)	16	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+CUart.h:63:7:virtual void wyz::CUart::Action(wyz::CCommand*)	16	static
 CRelateOfHandleAndCUart.h:17:35:static wyz::CRelateOfHandleAndCUart* wyz::CRelateOfHandleAndCUart::GetInstance()	4	static
-CUart.cpp:13:6:void HAL_UART_RxCpltCallback(UART_HandleTypeDef*)	16	static
-CUart.cpp:21:6:void HAL_UART_RxHalfCpltCallback(UART_HandleTypeDef*)	16	static
+CUart.cpp:16:6:void HAL_UART_RxCpltCallback(UART_HandleTypeDef*)	16	static
+CUart.cpp:24:6:void HAL_UART_RxHalfCpltCallback(UART_HandleTypeDef*)	16	static
 CDevice.h:15:7:constexpr wyz::CDevice::CDevice()	16	static
 CSubject.h:14:7:constexpr wyz::CSubject::CSubject()	16	static
 stl_list.h:733:7:std::__cxx11::list<_Tp, _Alloc>::~list() [with _Tp = wyz::CObserver*; _Alloc = std::allocator<wyz::CObserver*>]	16	static
-CUart.cpp:31:1:wyz::CUart::CUart(UART_HandleTypeDef*, uint32_t, uint32_t, uint8_t)	24	static
-CUart.cpp:41:1:wyz::CUart::~CUart()	16	static
-CUart.cpp:49:9:virtual uint8_t wyz::CUart::Open()	16	static
-CUart.cpp:53:9:virtual uint8_t wyz::CUart::Close()	16	static
-CUart.cpp:58:10:uint32_t wyz::CUart::GetSizeOfRxBuf()	16	static
-CUart.cpp:63:10:uint8_t* wyz::CUart::GetPointOfRxBuf()	16	static
-CUart.cpp:74:6:virtual void wyz::CUart::BlockRead(uint8_t*, uint32_t, uint32_t)	24	static
-CUart.cpp:79:6:virtual void wyz::CUart::Blockwrite(uint8_t*, uint32_t, uint32_t)	24	static
-CUart.cpp:84:6:virtual void wyz::CUart::NonBlockRead(uint8_t*, uint32_t, uint32_t)	24	static
-CUart.cpp:99:6:virtual void wyz::CUart::NonBlockWrite(uint8_t*, uint32_t, uint32_t)	24	static
-CUart.cpp:114:6:virtual void wyz::CUart::Attach(wyz::CObserver*)	16	static
-CUart.cpp:120:6:virtual void wyz::CUart::Detach(wyz::CObserver*)	16	static
-CUart.cpp:125:6:virtual void wyz::CUart::Notify()	24	static
-CUart.cpp:136:6:void wyz::CUart::StartObserverMode()	16	static
-CUart.cpp:141:6:void wyz::CUart::HardInterrupt(uint8_t)	16	static
-CUart.cpp:147:5:int wyz::CUart::GetUartMode()	16	static
+CUart.cpp:34:1:wyz::CUart::CUart(UART_HandleTypeDef*, uint32_t, uint32_t, uint8_t)	24	static
+CUart.cpp:44:1:wyz::CUart::~CUart()	16	static
+CUart.cpp:52:9:virtual uint8_t wyz::CUart::Open()	16	static
+CUart.cpp:56:9:virtual uint8_t wyz::CUart::Close()	16	static
+CUart.cpp:60:6:virtual void wyz::CUart::ClearWriteFIFO()	16	static
+CUart.cpp:64:6:virtual void wyz::CUart::ClearReadFIFO()	16	static
+CUart.cpp:67:10:uint32_t wyz::CUart::GetSizeOfRxBuf()	16	static
+CUart.cpp:72:10:uint8_t* wyz::CUart::GetPointOfRxBuf()	16	static
+CUart.cpp:83:6:virtual void wyz::CUart::BlockRead(uint8_t*, uint32_t, uint32_t)	24	static
+CUart.cpp:88:6:virtual void wyz::CUart::Blockwrite(uint8_t*, uint32_t, uint32_t)	24	static
+CUart.cpp:93:6:virtual void wyz::CUart::NonBlockRead(uint8_t*, uint32_t, uint32_t)	24	static
+CUart.cpp:108:6:virtual void wyz::CUart::NonBlockWrite(uint8_t*, uint32_t, uint32_t)	24	static
+CUart.cpp:123:6:virtual void wyz::CUart::Attach(wyz::CObserver*)	16	static
+CUart.cpp:129:6:virtual void wyz::CUart::Detach(wyz::CObserver*)	16	static
+CUart.cpp:134:6:virtual void wyz::CUart::Notify()	24	static
+CUart.cpp:145:6:void wyz::CUart::StartObserverMode()	16	static
+CUart.cpp:150:6:void wyz::CUart::HardInterrupt(uint8_t)	16	static
+CUart.cpp:156:5:int wyz::CUart::GetUartMode()	16	static
 stl_list.h:589:7:std::__cxx11::list<_Tp, _Alloc>::list() [with _Tp = wyz::CObserver*; _Alloc = std::allocator<wyz::CObserver*>]	16	static
 stl_list.h:323:14:std::__cxx11::_List_base<wyz::CObserver*, std::allocator<wyz::CObserver*> >::_List_impl::~_List_impl()	16	static
 stl_list.h:441:7:std::__cxx11::_List_base<_Tp, _Alloc>::~_List_base() [with _Tp = wyz::CObserver*; _Alloc = std::allocator<wyz::CObserver*>]	16	static

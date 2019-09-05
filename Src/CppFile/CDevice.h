@@ -15,6 +15,8 @@ using namespace std;
 class CDevice {  //驱动程序基类
 public:
 	virtual uint8_t Open()=0;
+	virtual void ClearWriteFIFO()=0;
+	virtual void ClearReadFIFO()=0;
 	virtual uint8_t Close()=0;
 	virtual void BlockRead(uint8_t *pDataBuf,uint32_t Size,uint32_t TimeOut=200)=0;
 	virtual void Blockwrite(uint8_t *pDataBuf,uint32_t Size,uint32_t TimeOut=200)=0;

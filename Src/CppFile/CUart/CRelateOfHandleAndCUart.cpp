@@ -19,7 +19,9 @@ CRelateOfHandleAndCUart::~CRelateOfHandleAndCUart() {
 }
 
 void CRelateOfHandleAndCUart::Add(CUart* pUart,UART_HandleTypeDef* pHandle){
-	this->m_HandleMap[pHandle] = pUart;
+	if(this->m_HandleMap.count(pHandle) == 0){
+		this->m_HandleMap[pHandle] = pUart;
+	}
 }
 
 bool CRelateOfHandleAndCUart::Exists(UART_HandleTypeDef* pHandle){

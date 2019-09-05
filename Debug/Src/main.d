@@ -30,7 +30,22 @@ Src/main.o: ../Src/main.cpp ../Inc/main.h \
  C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CSubject.h \
  C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CDevice.h \
  C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CObserver.h \
- C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CSubject.h
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CSubject.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CReceiver.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/RPLIDAR/A1Protocol.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CObserver.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CMachineEventBase.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateBase.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CMachineEventBase.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateMachine.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateAction.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateBase.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateAction.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/RPLIDAR/CCommandOfA1.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CCommand.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CReceiver.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CInvoker.h \
+ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CCommand.h
 
 ../Inc/main.h:
 
@@ -97,3 +112,33 @@ C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CDevice.h:
 C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CObserver.h:
 
 C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CSubject.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CReceiver.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/RPLIDAR/A1Protocol.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CObserver.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CMachineEventBase.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateBase.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CMachineEventBase.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateMachine.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateAction.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateBase.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CStateMachine/CStateAction.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/RPLIDAR/CCommandOfA1.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CCommand.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CReceiver.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CInvoker.h:
+
+C:/Users/wyz/source/cubeIDErepos/RobotCar/Src/CppFile/CCommand.h:

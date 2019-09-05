@@ -11,12 +11,13 @@
 #include "CDevice.h"
 #include <list>
 #include <map>
+#include "CReceiver.h"
 
 namespace wyz {
 
 
 
-class CUart: public CDevice ,public CSubject{
+class CUart: public CDevice ,public CSubject,public CReceiver{
 private:
 	UART_HandleTypeDef *m_Huart; //串口句柄
 	uint32_t m_SizeOfRxBuf; //串口接收缓存大小
@@ -38,7 +39,7 @@ public:
     enum{m_NonBlockReadInterrupt=0,m_GetOneCharInterrupt,};
     enum{m_UART_RxHalfCplt=0,m_UART_RxCplt,};
     int GetUartMode();
-	CUart(UART_HandleTypeDef *huart,uint32_t SizeOfRxBuf=100,uint32_t SizeOfTxBuf=20,uint8_t kMode = m_UsingBlockMode) ;
+	CUart(UART_HandleTypeDef *huart,uint32_t SizeOfRxBuf=1,uint32_t SizeOfTxBuf=20,uint8_t kMode = m_UsingBlockMode) ;
 	~CUart();
 	uint32_t GetSizeOfRxBuf();
 	uint8_t* GetPointOfRxBuf();
@@ -48,6 +49,8 @@ public:
 	/*************继承自CDevice*******************/
 	uint8_t Open();
 	uint8_t Close();
+	void ClearWriteFIFO();
+	void ClearReadFIFO();
 	void BlockRead(uint8_t *pDataBuf,uint32_t Size,uint32_t TimeOut=200);
 	void Blockwrite(uint8_t *pDataBuf,uint32_t Size,uint32_t TimeOut=200);
 	void NonBlockRead(uint8_t *pDataBuf,uint32_t Size,uint32_t TimeOut=0);
@@ -56,8 +59,10 @@ public:
 	void Attach(CObserver* pObserver);
 	void Detach(CObserver* pObserver);
 	void Notify();
-
-
+	/******************继承自CReceiver******************************/
+	void Action(CCommand* pCommand){
+		;
+	}
 
 };
 

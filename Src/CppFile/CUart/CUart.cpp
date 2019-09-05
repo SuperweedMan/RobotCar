@@ -8,6 +8,9 @@
 #include "CUart.h"
 #include "CRelateOfHandleAndCUart.h"
 #include "main.h"
+#include "CCommandOfA1.h"
+#include "CCommand.h"
+#include <string.h>
 
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef  *huart){
@@ -54,7 +57,13 @@ uint8_t CUart::Close()
 {
 	return 0;
 }
+void CUart::ClearWriteFIFO(){
+	memset(this->m_pTxBuf,0,this->m_SizeOfTxBuf*sizeof(uint8_t));
+}
 
+void CUart::ClearReadFIFO(){
+
+}
 uint32_t CUart::GetSizeOfRxBuf()
 {
 	return this->m_SizeOfRxBuf;
@@ -147,6 +156,9 @@ void CUart::HardInterrupt(uint8_t interruptMode)
 int CUart::GetUartMode(){
 	return this->m_UartMode;
 }
+
+/*******************************************************/
+
 
 } /* namespace wyz */
 
