@@ -1,0 +1,2 @@
+CReceiver.cpp:12:1:wyz::CReceiver::CReceiver()	16	static
+CReceiver.cpp:17:1:wyz::CReceiver::~CReceiver()	16	static

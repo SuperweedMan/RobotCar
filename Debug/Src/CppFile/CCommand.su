@@ -1,0 +1,2 @@
+CCommand.cpp:12:1:wyz::CCommand::CCommand()	16	static
+CCommand.cpp:17:1:wyz::CCommand::~CCommand()	16	static

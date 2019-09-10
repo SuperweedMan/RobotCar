@@ -1,0 +1,5 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+CCommandOfA1.cpp:12:1:wyz::CCommandOfA1::CCommandOfA1(wyz::CReceiver*, std::__cxx11::string)	24	static
+CCommandOfA1.cpp:17:1:wyz::CCommandOfA1::~CCommandOfA1()	16	static
+CCommandOfA1.cpp:21:13:std::__cxx11::string wyz::CCommandOfA1::GetOrder()	16	static
+CCommandOfA1.cpp:25:6:virtual void wyz::CCommandOfA1::Excute(wyz::CCommand*)	16	static
